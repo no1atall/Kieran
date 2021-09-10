@@ -5,8 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary : "#5e18ea"
-      }
+        primary : "#5e18ea",
+        primarylight : "#d1bdf4",
+        turqois: "#48E5C2",
+        primarygreen: "#177E89",
+        testgreen: "#7eb09b"
+      },
+      backgroundImage: theme => ({
+        'hero-image': "url('/motherboard.jpg')",
+      }) 
     },
   },
   variants: {
