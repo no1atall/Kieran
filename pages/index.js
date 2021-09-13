@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import AboutHome from '../components/AboutHome'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import ServicesHome from '../components/ServicesHome'
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       
       <Navbar/>
       <Hero/>
+      <ServicesHome/>
+      <AboutHome />
       <div className="max-w-7xl mx-auto text-3xl">
         
         <h1 className=" h-screen flex justify-center items-center hover:text-green-400">
