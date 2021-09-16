@@ -3,6 +3,7 @@ import AboutHome from '../components/AboutHome'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import Pricing from '../components/Pricing'
 import ServicesHome from '../components/ServicesHome'
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <ServicesHome/>
+      <Pricing/>
       <AboutHome />
       <div className="max-w-7xl mx-auto text-3xl">
         
