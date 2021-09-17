@@ -7,7 +7,7 @@ const NavInfo = () => {
         <h5>
           Call Us:
           <span className="text-gray-400 hover:text-primarylight">
-            <Link href="tel:"> Phone number Here</Link>
+            <Link href="tel:07534 014483"> 07534 014483</Link>
           </span>
         </h5>
         <h5>

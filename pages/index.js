@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import AboutHome from '../components/AboutHome'
+import ContactHome from '../components/ContactHome'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import PartsHome from '../components/PartHome'
 import Pricing from '../components/Pricing'
 import ServicesHome from '../components/ServicesHome'
 
@@ -20,12 +22,9 @@ export default function Home() {
       <ServicesHome/>
       <Pricing/>
       <AboutHome />
-      <div className="max-w-7xl mx-auto text-3xl">
-        
-        <h1 className=" h-screen flex justify-center items-center hover:text-green-400">
-          Home Page. To be built  
-        </h1>
-      </div>
+      <PartsHome/>
+      <ContactHome/>
+      
       <Footer/>
     </div>
   )

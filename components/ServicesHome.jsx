@@ -22,7 +22,7 @@ const ServicesData = [
   {
     id: 3,
     img: "/data.png",
-    heading: "Data Recovery",
+    heading: "Screen Repair",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
     button: "Read More",
@@ -30,7 +30,7 @@ const ServicesData = [
   {
     id: 4,
     img: "/password.jpg",
-    heading: "Password Resets",
+    heading: "System Resets",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "",
     button: "Read More",

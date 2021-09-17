@@ -8,7 +8,7 @@ const Card = (data, index) => {
         <h3 className="mt-4 text-4xl mx-2">{data.heading}</h3>
         <p className="mt-4 text-lg mx-2">{data.text}</p>
       </div>
-      <button className="my-4 mx-2 px-4 py-2 bg-primary hover:bg-primarylight hover:text-gray-900 text-white ">
+      <button className="my-4 mx-2 px-4 py-2 bg-primary hover:bg-primarylight hover:text-gray-900 text-white font-semibold ">
         {data.button}
       </button>
     </div>
