@@ -19,7 +19,7 @@ const DesktopNav = () => {
               />
             </Link>
           </div>
-          <ul className="flex items-center justify-end text-2xl lg:text-3xl font-semibold w-full uppercase ">
+          <ul className="flex items-center justify-end text-2xl lg:text-3xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
             <li className="hover:text-primary mx-8">
               <Link href="/services">Services</Link>
             </li>

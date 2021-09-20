@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavInfo = () => {
   return (
-    <div className="w-screen bg-gray-800">
+    <div className="w-screen bg-gray-800 px-4 xl:px-0">
       <div className=" max-w-7xl mx-auto px-4 bg-gray-800 h-12 text-white flex justify-between items-center">
         <h5>
           Call Us:
