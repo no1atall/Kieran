@@ -14,7 +14,7 @@ const MobileNav = () => {
     setNavbarOpen(false);
   };
   return (
-    <nav id="mobile-nav" className=" bg-white w-screen h-20 fixed">
+    <nav id="mobile-nav" className=" z-50 bg-white w-screen h-20 fixed">
       <button
         className=" mt-6 ml-4 text-3xl font-extrabold cursor-pointer z-90 text-gray-500"
         onClick={handleToggle}

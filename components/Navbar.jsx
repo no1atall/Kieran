@@ -32,7 +32,7 @@ const useMediaQuery = (width) => {
 const Navbar = () => {
   const isBreakpoint = useMediaQuery(767);
 
-  return <div>{isBreakpoint ? <MobileNav /> : <DesktopNav />}</div>;
+  return <div>{isBreakpoint ? <MobileNav  /> : <DesktopNav />}</div>;
 };
 
 export default Navbar;

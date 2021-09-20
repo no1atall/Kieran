@@ -6,7 +6,7 @@ import NavInfo from "./NavInfo";
 
 const DesktopNav = () => {
   return (
-    <nav className=" fixed ">
+    <nav className=" fixed z-50 ">
       <NavInfo />
       <div className="w-screen bg-white">
         <div className="h-36 flex px-4 bg-white max-w-7xl mx-auto">

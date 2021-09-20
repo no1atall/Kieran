@@ -42,12 +42,12 @@ const ServicesHome = () => {
     <section className=" max-w-7xl mx-auto text-gray-800">
       <CompanySpacer />
       <h2 className="text-5xl text-center mt-12">What We Offer</h2>
-      <p className="text-2xl text-center mt-12">
+      <p className="text-xl sm:text-2xl text-center mt-12">
         Repairs carried out to high standard using genuine parts wherever
         available. If no genuine parts are available then we use manufacturer
         recommended alternatives.
       </p>
-      <div className="flex mt-12">
+      <div className="flex flex-col sm:flex-wrap xl:flex-nowrap items-center sm:justify-center sm:items-stretch sm:flex-row mt-12">
         {ServicesData.map((data, index) => (
           <Card
             key={data.id}
