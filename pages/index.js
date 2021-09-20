@@ -19,11 +19,11 @@ export default function Home() {
       
       <Navbar/>
       <Hero/>
-      <ServicesHome/>
-      <Pricing/>
-      <AboutHome />
+      {/* <ServicesHome/> */}
+      {/* <Pricing/> */}
+      {/* <AboutHome />
       <PartsHome/>
-      <ContactHome/>
+      <ContactHome/> */}
       
       <Footer/>
     </div>

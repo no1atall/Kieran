@@ -9,7 +9,7 @@ const ServicesData = [
     heading: "Phone Repairs",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
-    button: "Read More",
+    button: "Repair Your Device",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const ServicesData = [
     heading: "Laptop Repairs",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
-    button: "Read More",
+    button: "Repair Your Device",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const ServicesData = [
     heading: "Screen Repair",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
-    button: "Read More",
+    button: "Repair Your Screen",
   },
   {
     id: 4,
@@ -33,19 +33,19 @@ const ServicesData = [
     heading: "System Resets",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "",
-    button: "Read More",
+    button: "Regain Access",
   },
 ];
 
 const ServicesHome = () => {
   return (
-    <section className="max-w-7xl mx-auto text-gray-800">
+    <section className=" max-w-7xl mx-auto text-gray-800">
       <CompanySpacer />
       <h2 className="text-5xl text-center mt-12">What We Offer</h2>
       <p className="text-2xl text-center mt-12">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nobis
-        earum odit harum sed ad illum, nisi ratione nihil sunt voluptate dolorum
-        adipisci praesentium atque, veritatis quia cumque vero est.
+        Repairs carried out to high standard using genuine parts wherever
+        available. If no genuine parts are available then we use manufacturer
+        recommended alternatives.
       </p>
       <div className="flex mt-12">
         {ServicesData.map((data, index) => (

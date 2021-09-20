@@ -174,16 +174,15 @@ const AppleServices = [
 ];
 
 const Pricing = () => {
-  console.log(PhoneServices);
   return (
     <section className="max-w-7xl mx-auto">
       <CompanySpacer />
       <h2 className="text-center text-5xl mt-12">Our Services And Pricing</h2>
-      <div className="flex w-full mt-8 font-bold text-lg">
+      <div className="flex w-full mt-12 font-bold text-lg">
         <div className="w-[50%] mx-4">
           <h3 className="text-4xl">Phone Repairs</h3>
           {PhoneServices.map((PhoneService, index) => (
-            <div className="mt-4">
+            <div key={index} className="mt-4">
               <div className="flex justify-between">
                 <h4 className={PhoneService.color}>{PhoneService.service}</h4>
                 <span>{PhoneService.price}</span>
@@ -202,7 +201,7 @@ const Pricing = () => {
             </span>
           </h3>
           {ComputerServies.map((ComputerService, index) => (
-            <div className="mt-4">
+            <div key={index} className="mt-4">
               <div className="flex justify-between">
                 <h4 className={ComputerService.color}>
                   {ComputerService.service}
@@ -221,7 +220,7 @@ const Pricing = () => {
           Apple Specific Repair Pricing
         </h3>
         {AppleServices.map((AppleService, index) => (
-          <div className="mt-4 max-w-2xl mx-auto ">
+          <div key={index} className="mt-4 max-w-2xl mx-auto ">
             <div className="flex justify-between">
               <h4 className={AppleService.color}>{AppleService.service}</h4>
               <span>{AppleService.price}</span>
