@@ -53,13 +53,20 @@ const PhoneServices = [
   },
   {
     id: 8,
-    service: "Microphone and Speaker Replacement",
+    service: "Speaker Replacement",
     price: "From £29.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
     id: 9,
+    service: "Mic Replacement",
+    price: "From £29.99",
+    description: "Price Varies By Model",
+    color: "text-primary",
+  },
+  {
+    id: 10,
     service: "Wifi/Signal Repair",
     price: "From £14.99",
     description: "Price Varies By Model",
@@ -178,14 +185,14 @@ const Pricing = () => {
     <section className="max-w-7xl mx-auto">
       <CompanySpacer />
       <h2 className="text-center text-5xl mt-12">Our Services And Pricing</h2>
-      <div className="flex w-full mt-12 font-bold text-lg">
-        <div className="w-[50%] mx-4">
-          <h3 className="text-4xl">Phone Repairs</h3>
+      <div className="flex flex-col sm:flex-row w-full mt-12 font-bold sm:text-lg">
+        <div className=" sm:w-[50%] mx-4">
+          <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0 ">Phone Repairs</h3>
           {PhoneServices.map((PhoneService, index) => (
             <div key={index} className="mt-4">
               <div className="flex justify-between">
                 <h4 className={PhoneService.color}>{PhoneService.service}</h4>
-                <span>{PhoneService.price}</span>
+                <span className="">{PhoneService.price}</span>
               </div>
               <div className="font-semibold italic text-gray-500 text-sm">
                 {PhoneService.description}
@@ -193,8 +200,8 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        <div className="w-[50%] mx-4">
-          <h3 className="text-4xl">
+        <div className=" mt-12 sm:mt-0 sm:w-[50%] mx-4">
+          <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0">
             PC Repairs{" "}
             <span className="text-gray-500 text-base">
               - Asus, Acer, Lenovo, Toshiba, HP, Dell, Apple
@@ -216,7 +223,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="mx-4 font-bold text-lg">
-        <h3 className="text-4xl mt-12 text-center">
+        <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0 mt-12 sm:text-center">
           Apple Specific Repair Pricing
         </h3>
         {AppleServices.map((AppleService, index) => (
