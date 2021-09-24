@@ -1,35 +1,42 @@
 import Card from "./Card";
 import CompanySpacer from "./CompanySpacer";
+import { v4 as uuidv4 } from 'uuid';
+
 
 // Data regarding servies which will be contained in cards
+//uuid is used to generate a unique ID for each object in the array
 const ServicesData = [
   {
-    id: 1,
+    id: uuidv4(),
     img: "/broken-phone.jpg",
+    alt: "Borken Iphone which is opened for repairs",
     heading: "Phone Repairs",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
     button: "Repair Your Device",
   },
   {
-    id: 2,
+    id: uuidv4(),
     img: "/broken-computer.jpg",
+    alt: "Broken laptop keyboard",
     heading: "Laptop Repairs",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
     button: "Repair Your Device",
   },
   {
-    id: 3,
+    id: uuidv4(),
     img: "/data.png",
+    alt: "Screen in need of repairs",
     heading: "Screen Repair",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
     link: "",
     button: "Repair Your Screen",
   },
   {
-    id: 4,
+    id: uuidv4(),
     img: "/password.jpg",
+    alt: "Passworded computer",
     heading: "System Resets",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "",

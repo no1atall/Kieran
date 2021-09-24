@@ -1,72 +1,74 @@
 import CompanySpacer from "./CompanySpacer";
+import { v4 as uuidv4 } from 'uuid';
 
 //Phone Services offered, description and color can be left blank if defaults are needed.
+//uuid is used to generate a unique ID for each object in the array
 const PhoneServices = [
   {
-    id: 1,
+    id: uuidv4(),
     service: "Screen Repair",
     price: "From £49.99",
     description: "Apple And Andriod Phones",
     color: "text-primary",
   },
   {
-    id: 2,
+    id: uuidv4(),
     service: "Software Reset",
     price: "£29.99",
     description: "Reset The Phone's Internal Software And Update As Needed",
     color: "",
   },
   {
-    id: 3,
+    id: uuidv4(),
     service: "App Installations",
     price: "Variable",
     description: "Insall Various Apps As Requested By The Customer",
     color: "",
   },
   {
-    id: 4,
+    id: uuidv4(),
     service: "Battery Replacement",
     price: "From £24.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
-    id: 5,
+    id: uuidv4(),
     service: "Charging Port",
     price: "From £19.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
-    id: 6,
+    id: uuidv4(),
     service: "Camera Replacment",
     price: "From £22.99",
     description: "Price Varies By Model",
     color: "",
   },
   {
-    id: 7,
+    id: uuidv4(),
     service: "Home Button Repair",
     price: "From £14.99",
     description: "Price Varies By Model",
     color: "",
   },
   {
-    id: 8,
+    id: uuidv4(),
     service: "Speaker Replacement",
     price: "From £29.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
-    id: 9,
+    id: uuidv4(),
     service: "Mic Replacement",
     price: "From £29.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
-    id: 10,
+    id: uuidv4(),
     service: "Wifi/Signal Repair",
     price: "From £14.99",
     description: "Price Varies By Model",
@@ -75,30 +77,31 @@ const PhoneServices = [
 ];
 
 //Computer Services offered, description and color can be left blank if defaults are needed.
+//uuid is used to generate a unique ID for each object in the array
 const ComputerServies = [
   {
-    id: 1,
+    id: uuidv4(),
     service: "Laptop Screen Repair",
     price: "From £109.99",
     description: "Lenovo, Asus, Toshiba, HP, Acus, Acer, ",
     color: "text-primary",
   },
   {
-    id: 2,
+    id: uuidv4(),
     service: "Drive Upgrades",
     price: "From £49.99",
     description: "Price Varries By Size",
     color: "text-primary",
   },
   {
-    id: 3,
+    id: uuidv4(),
     service: "Computer Upgrades",
     price: "From £29.99",
     description:
       "Parts Either Provided By The Customer Or Payed For Seperately",
   },
   {
-    id: 4,
+    id: uuidv4(),
     service: "Windows Password Removal",
     price: "£49.99",
     description:
@@ -106,42 +109,42 @@ const ComputerServies = [
     color: "",
   },
   {
-    id: 5,
+    id: uuidv4(),
     service: "Virus Removal",
     price: "£29.99",
     description: "Malware Included",
     color: "",
   },
   {
-    id: 6,
+    id: uuidv4(),
     service: "PC Custom Built",
     price: "Variable",
     description: "Price Varies By Customer Needs And Specifications ",
     color: "",
   },
   {
-    id: 7,
+    id: uuidv4(),
     service: "Boot And Bios Repair",
     price: "From £39.99",
     description: "",
     color: "",
   },
   {
-    id: 8,
+    id: uuidv4(),
     service: "Keyboard Repairs",
     price: "From £44.99",
     description: "",
     color: "",
   },
   {
-    id: 9,
+    id: uuidv4(),
     service: "Trackpad Repairs",
     price: "From £34.99",
     description: "",
     color: "",
   },
   {
-    id: 10,
+    id: uuidv4(),
     service: "Data Transfer",
     price: "£39.99",
     description: "",
@@ -149,30 +152,32 @@ const ComputerServies = [
   },
 ];
 
+//Apple Service specific pricing, description and color can be left blank if defaults are needed.
+//uuid is used to generate a unique ID for each object in the array
 const AppleServices = [
   {
-    id: 1,
+    id: uuidv4(),
     service: "Screen Repair",
     price: "From £199.99",
     description: "Price Varies By Model",
     color: "text-primary",
   },
   {
-    id: 2,
+    id: uuidv4(),
     service: "Trackpad Repair",
     price: "From £99.99",
     description: "Price Varies By Model",
     color: "",
   },
   {
-    id: 3,
+    id: uuidv4(),
     service: "Touchbar Repair",
     price: "From £99.99",
     description: "Price Varies By Model",
     color: "",
   },
   {
-    id: 4,
+    id: uuidv4(),
     service: "Keyboard Repair",
     price: "From £59.99",
     description: "Price Varies By Model",
@@ -222,7 +227,7 @@ const Pricing = () => {
           ))}
         </div>
       </div>
-      <div className="mx-4 font-bold text-lg">
+      <div className="mx-4 font-bold text-lg mb-8">
         <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0 mt-12 sm:text-center">
           Apple Specific Repair Pricing
         </h3>

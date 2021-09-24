@@ -91,7 +91,7 @@ const ContactHome = () => {
           )}
           <button
             type="submit"
-            className="transition duration-500 ease-in-out my-4 w-4/5 sm:w-1/5 py-3 font-semibold  rounded-md bg-primary text-white hover:bg-green-500 "
+            className="transition duration-500 ease-in-out my-4 w-full sm:w-2/5 lg:w-1/5 py-3 font-semibold  rounded-md bg-primary text-white hover:bg-green-500 "
           >
             {" "}
             Submit

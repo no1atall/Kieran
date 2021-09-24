@@ -20,8 +20,8 @@ export default function Home() {
       <Hero />
       <ServicesHome />
       <Pricing/>
-      <AboutHome />
-      <PartsHome/>
+      {/* <AboutHome />
+      <PartsHome/> */}
       <ContactHome/>
 
       <Footer />
