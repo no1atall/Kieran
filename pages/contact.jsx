@@ -3,8 +3,6 @@ import { FiPhoneCall, FiMail } from "react-icons/fi";
 import Head from "next/head";
 
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import InfoBackground from "../components/InfoBackground";
 
 const phone = {
@@ -24,7 +22,7 @@ const Contact = () => {
         <title>Dev's PC Repairs</title>
         <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
       </Head>
-      {/* <Navbar /> */}
+
       <div className="max-w-7xl mx-auto text-3xl flex  pt-48 mb-8 ">
         <div className=" w-1/2">
           <InfoBackground email={email} phone={phone} />
@@ -33,7 +31,6 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
