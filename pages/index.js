@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <ServicesHome />
       <Pricing/>
@@ -24,7 +24,7 @@ export default function Home() {
       <PartsHome/> */}
       <ContactHome/>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

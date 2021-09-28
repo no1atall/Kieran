@@ -24,7 +24,7 @@ const Contact = () => {
         <title>Dev's PC Repairs</title>
         <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="max-w-7xl mx-auto text-3xl flex  pt-48 mb-8 ">
         <div className=" w-1/2">
           <InfoBackground email={email} phone={phone} />
@@ -33,7 +33,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

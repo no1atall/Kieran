@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 
+
 const ContactForm = () => {
     const {
         register,
@@ -55,6 +56,7 @@ const ContactForm = () => {
             placeholder="Your Phone Number (optional)"
             className=" shadow-md my-4 w-full font-medium border-2 border-gray-900 focus:ring-2 focus:outline-none focus:border-transparent focus:ring-green-500 rounded-md px-6 py-2"
           />
+          
           <input
             type="email"
             defaultValue=""
