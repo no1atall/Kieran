@@ -189,10 +189,10 @@ const Pricing = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <CompanySpacer />
-      <h2 className="text-center text-5xl mt-12">Our Services And Pricing</h2>
+      <h2 className="text-center text-4xl sm:text-5xl mt-12">Our Services And Pricing</h2>
       <div className="flex flex-col sm:flex-row w-full mt-12 font-bold sm:text-lg">
         <div className=" sm:w-[50%] mx-4">
-          <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0 ">Phone Repairs</h3>
+          <h3 className="text-2xl sm:text-4xl mb-8  ">Phone Repairs</h3>
           {PhoneServices.map((PhoneService, index) => (
             <div key={index} className="mt-4">
               <div className="flex justify-between">
@@ -206,7 +206,7 @@ const Pricing = () => {
           ))}
         </div>
         <div className=" mt-12 sm:mt-0 sm:w-[50%] mx-4">
-          <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0">
+          <h3 className="text-2xl sm:text-4xl mb-8 ">
             PC Repairs{" "}
             <span className="text-gray-500 text-base">
               - Asus, Acer, Lenovo, Toshiba, HP, Dell, Apple
@@ -228,7 +228,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="mx-4 font-bold text-lg mb-8">
-        <h3 className="text-2xl sm:text-4xl mb-8 sm:mb-0 mt-12 sm:text-center">
+        <h3 className="text-2xl sm:text-4xl mb-8 mt-12 sm:text-center">
           Apple Specific Repair Pricing
         </h3>
         {AppleServices.map((AppleService, index) => (

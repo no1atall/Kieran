@@ -21,7 +21,7 @@ const DesktopNav = () => {
               </a>
             </Link>
           </div>
-          <ul className="flex items-center justify-end text-2xl lg:text-3xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
+          <ul className="flex mb-8 items-end justify-end text-2xl lg:text-xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
             <li className="hover:text-primary mx-8">
               <Link href="/">Home</Link>
             </li>

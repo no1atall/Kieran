@@ -48,8 +48,8 @@ const ServicesHome = () => {
   return (
     <section className=" max-w-7xl mx-auto text-gray-800">
       <CompanySpacer />
-      <h2 className="text-5xl text-center mt-12">What We Offer</h2>
-      <p className="text-xl sm:text-2xl text-center mt-12">
+      <h2 className="text-4xl sm:text-5xl text-center mt-12">What We Offer</h2>
+      <p className=" mx-2 text-lg sm:text-2xl text-center mt-12">
         Repairs carried out to high standard using genuine parts wherever
         available. If no genuine parts are available then we use manufacturer
         recommended alternatives.
