@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 const NavInfo = () => {
   return (
@@ -12,8 +13,20 @@ const NavInfo = () => {
         </h5>
         <h5>
           Email:
-          <span className="text-gray-400 hover:text-primarylight">
-            <Link href=""> devspcrepairs@gmail.com</Link>
+          <span className="text-gray-400 hover:text-primarylight ml-1">
+            <button
+              onClick={() =>
+                navigator.clipboard.writeText("devspcrepairs@gmail.com") &&
+                Swal.fire({
+                  title: "Email copied to clipboard",
+                  text: "We look forward to hearing from you!",
+                  icon: "success",
+                  confirmButtonColor: "#10B981",
+                })
+              }
+            >
+              devspcrepairs@gmail.com
+            </button>
           </span>
         </h5>
       </div>
