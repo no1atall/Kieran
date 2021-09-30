@@ -6,12 +6,12 @@ import ContactForm from "../components/ContactForm";
 import InfoBackground from "../components/InfoBackground";
 
 const phone = {
-  icon: <FiPhoneCall className=" text-green-500 text-5xl mr-2 mt-1" />,
+  icon: <FiPhoneCall className=" text-green-500 text-3xl mr-1 mt-1" />,
   number: "tel:07534 014483",
   text: "07534 014483",
 };
 const email = {
-  icon: <FiMail className="text-green-500 text-5xl " />,
+  icon: <FiMail className="text-green-500 text-3xl " />,
   text: "devspcrepairs@gmail.com",
 };
 

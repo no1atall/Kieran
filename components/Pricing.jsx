@@ -187,7 +187,7 @@ const AppleServices = [
 
 const Pricing = () => {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto pb-8">
       <CompanySpacer />
       <h2 className="text-center text-4xl sm:text-5xl mt-12">Our Services And Pricing</h2>
       <div className="flex flex-col sm:flex-row w-full mt-12 font-bold sm:text-lg">
