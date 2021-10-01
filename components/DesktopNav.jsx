@@ -31,7 +31,7 @@ const DesktopNav = () => {
               </a>
             </Link>
           </div>
-          <ul className="flex mb-8 items-end justify-end text-2xl lg:text-xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
+          <ul className="flex mt-24 items-start justify-end text-2xl lg:text-xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
             {links.map((link, index) => {
               let isActive = active === index;
               return (
