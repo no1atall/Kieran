@@ -1,12 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 import logo from "../public/logo.png";
 import NavInfo from "./NavInfo";
 
+const links = [
+  { text: "Home", link: "/" },
+  { text: "Services", link: "/services" },
+  { text: "Contact Us", link: "/contact" },
+  { text: "About Us", link: "/about" },
+];
+
 const DesktopNav = () => {
+  const [active, setActive] = useState(0);
+
   return (
-    <nav className=" fixed z-50 ">
+    <nav className=" fixed z-50">
       <NavInfo />
       <div className="w-screen bg-white">
         <div className="h-36 flex px-4 bg-white max-w-7xl mx-auto">
@@ -22,18 +32,21 @@ const DesktopNav = () => {
             </Link>
           </div>
           <ul className="flex mb-8 items-end justify-end text-2xl lg:text-xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
-            <li className="hover:text-primary mx-8">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="hover:text-primary mx-8">
-              <Link href="/services">Services</Link>
-            </li>
-            <li className="hover:text-primary mx-8">
-              <Link href="/contact">Contact Us</Link>
-            </li>
-            <li className="hover:text-primary ml-8">
-              <Link href="/about">About Us</Link>
-            </li>
+            {links.map((link, index) => {
+              let isActive = active === index;
+              return (
+                <li className="hover:text-primary ml-8">
+                  <a onClick={() => setActive(index)}>
+                    <Link href={link.link}>{link.text}</Link>
+                  </a>
+                  {isActive ? (
+                    <hr className="transition duration-1000 ease-in-out h-1 w-full bg-primary" />
+                  ) : (
+                    <hr className="border-white" />
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

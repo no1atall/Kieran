@@ -28,20 +28,30 @@ const MobileNav = () => {
             : "transform translate-x-0 duration-700 overflow-y-scroll fixed inset-y-0 left-0 h-screen w-0 overflow-hidden max-w-[300px] "
         }`}
       >
-        <li onClick={closeMenu} className=" text-gray-500 pl-4 pb-4">
-          <Link href="/">Home</Link>
+        <li className=" text-gray-500 pl-4 pb-4">
+          <a onClick={closeMenu}>
+            <Link href="/">Home</Link>
+          </a>
         </li>
-        <li onClick={closeMenu} className=" text-gray-500 pl-4 pb-4">
-          <Link href="/services">Services</Link>
+        <li className=" text-gray-500 pl-4 pb-4">
+          <a onClick={closeMenu}>
+            <Link href="/services">Services</Link>
+          </a>
         </li>
-        <li onClick={closeMenu} className=" text-gray-500 pl-4 pb-4">
-          <Link href="tel:12892346622">Call</Link>
+        <li className=" text-gray-500 pl-4 pb-4">
+          <a onClick={closeMenu}>
+            <Link href="tel:12892346622">Call</Link>
+          </a>
         </li>
-        <li onClick={closeMenu} className=" text-gray-500 pl-4 pb-4">
-          <Link href="/contact">Contact</Link>
+        <li className=" text-gray-500 pl-4 pb-4">
+          <a onClick={closeMenu}>
+            <Link href="/contact">Contact</Link>
+          </a>
         </li>
-        <li onClick={closeMenu} className=" text-gray-500 pl-4 pb-4">
-          <Link href="about">About</Link>
+        <li className=" text-gray-500 pl-4 pb-4">
+          <a onClick={closeMenu}>
+            <Link href="/about">About</Link>
+          </a>
         </li>
       </ul>
     </nav>
