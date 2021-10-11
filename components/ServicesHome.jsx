@@ -11,8 +11,8 @@ const ServicesData = [
     img: "/broken-phone.jpg",
     alt: "Borken Iphone which is opened for repairs",
     heading: "Phone Repairs",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
-    link: "",
+    text: "We use original parts sourced directly from the manufacturer to bring your phone back to factory standard.",
+    link: "#homeContact",
     button: "Repair Your Device",
   },
   {
@@ -20,8 +20,8 @@ const ServicesData = [
     img: "/broken-computer.jpg",
     alt: "Broken laptop keyboard",
     heading: "Laptop Repairs",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
-    link: "",
+    text: "We diagnose and repair your laptops as quickly as possible, getting you back on track with your busy life.",
+    link: "#homeContact",
     button: "Repair Your Device",
   },
   {
@@ -29,8 +29,8 @@ const ServicesData = [
     img: "/data.png",
     alt: "Screen in need of repairs",
     heading: "Screen Repair",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita esse deserunt?",
-    link: "",
+    text: "Be it a phone or laptop screen which needs repair, we do it all, using our genuine factory sourced parts. ",
+    link: "#homeContact",
     button: "Repair Your Screen",
   },
   {
@@ -38,8 +38,8 @@ const ServicesData = [
     img: "/password.jpg",
     alt: "Passworded computer",
     heading: "System Resets",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    link: "",
+    text: "Locked out of your computer? Need a system refesh and flush? Trust us to get your computer back to working condition.",
+    link: "#homeContact",
     button: "Regain Access",
   },
 ];

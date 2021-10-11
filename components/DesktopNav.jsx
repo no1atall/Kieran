@@ -22,7 +22,7 @@ const DesktopNav = () => {
         <div className="h-36 flex px-4 bg-white max-w-7xl mx-auto">
           <div className=" w-40">
             <Link href="/">
-              <a>
+              <a onClick={() => setActive(0)}>
                 <Image
                   src={logo}
                   alt="Dev's PC Repairs Logo"

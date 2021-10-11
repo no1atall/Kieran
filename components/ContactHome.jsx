@@ -23,7 +23,7 @@ const ContactHome = () => {
   console.log(watch("name"));
 
   return (
-    <div className=" bg-gray-100 pb-8 pt-2">
+    <div id="homeContact" className=" bg-gray-100 pb-8 pt-2">
       <div className="max-w-7xl  mx-auto">
         <CompanySpacer />
         <h2 className="text-center text-5xl mt-12">Contact Us</h2>
