@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
 
           <button className="transition duration-500 ease-in-out bg-primary text-white hover:bg-green-500 text-base sm:text-xl  mt-8 lg:mt-4 px-4 py-2 mx-auto sm:mx-4 xl:mx-0 w-4/5 sm:w-2/5 lg:w-1/5 rounded-lg font-semibold uppercase">
-            <Link href="#homeContact">
+            <Link href="/contact">
             Request A Free Quote
             </Link>
           </button>
