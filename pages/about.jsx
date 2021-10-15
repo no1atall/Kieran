@@ -5,7 +5,7 @@ const About = () => {
     <div>
       <Head>
         <title>Dev's PC Repairs</title>
-        <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <div className="max-w-7xl mx-auto text-3xl">

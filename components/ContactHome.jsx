@@ -1,7 +1,26 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 import CompanySpacer from "./CompanySpacer";
+
+const schema = yup
+  .object({
+    name: yup
+      .string()
+      .matches(/^([^0-9]*)$/, "Your name should not contain numbers")
+      .required("Your name is required"),
+    subject: yup.string().required("Please tell us your problem"),
+    email: yup
+      .string()
+      .email("Please enter a valid email address")
+      .required("Your email is required"),
+    message: yup
+      .string()
+      .required("Please let us know a bit more about your problem"),
+  })
+  .required();
 
 const ContactHome = () => {
   const {
@@ -9,7 +28,8 @@ const ContactHome = () => {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm();
+  } = useForm({ resolver: yupResolver(schema) });
+
   const onSubmit = (data) => {
     console.log(data);
     Swal.fire({
@@ -34,7 +54,7 @@ const ContactHome = () => {
           <input
             type="text"
             defaultValue=""
-            {...register("name", { required: true })}
+            {...register("name")}
             name="name"
             placeholder="Your Name"
             id=""
@@ -42,14 +62,14 @@ const ContactHome = () => {
           />
           {errors.name && (
             <span className="text-red-600 font-semibold">
-              This field is required
+              {errors.name.message}
             </span>
           )}
 
           <input
             type="text"
             defaultValue=""
-            {...register("subject", { required: true })}
+            {...register("subject")}
             name="subject"
             placeholder="Your Issue"
             id=""
@@ -57,7 +77,7 @@ const ContactHome = () => {
           />
           {errors.subject && (
             <span className="text-red-600 font-semibold">
-              This field is required
+              {errors.subject.message}
             </span>
           )}
           <input
@@ -72,7 +92,7 @@ const ContactHome = () => {
           <input
             type="email"
             defaultValue=""
-            {...register("email", { required: true })}
+            {...register("email")}
             name="email"
             id=""
             placeholder="Your Email"
@@ -80,12 +100,12 @@ const ContactHome = () => {
           />
           {errors.email && (
             <span className="text-red-600 font-semibold">
-              This field is required
+              {errors.email.message}
             </span>
           )}
           <textarea
             defaultValue=""
-            {...register("message", { required: true })}
+            {...register("message")}
             name="message"
             id=""
             cols="30"
@@ -95,7 +115,7 @@ const ContactHome = () => {
           ></textarea>
           {errors.message && (
             <span className="text-red-600 font-semibold">
-              This field is required
+              {errors.message.message}
             </span>
           )}
           <button

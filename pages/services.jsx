@@ -8,7 +8,7 @@ const Services = () => {
     <div>
       <Head>
         <title>Dev's PC Repairs</title>
-        <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <section className="max-w-7xl mx-auto text-3xl">

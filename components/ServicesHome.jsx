@@ -55,7 +55,7 @@ const ServicesHome = () => {
         recommended alternatives.
       </p>
       <div className="flex flex-col sm:flex-wrap xl:flex-nowrap items-center sm:justify-center sm:items-stretch sm:flex-row mt-12">
-        {ServicesData.map((data, index) => (
+        {ServicesData.map((data) => (
           <Card
             key={data.id}
             img={data.img}

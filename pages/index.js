@@ -11,7 +11,7 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Dev's PC Repairs</title>
-        <link rel="icon" href="/Devs_PC_Repairs_Logo.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <Hero />

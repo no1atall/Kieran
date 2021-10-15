@@ -23,11 +23,13 @@ const DesktopNav = () => {
         <div className="h-36 flex px-4 bg-white max-w-7xl mx-auto">
           <div className=" w-40">
             <Link href="/">
-              <Image
-                src={logo}
-                alt="Dev's PC Repairs Logo"
-                className="cursor-pointer"
-              />
+              <a>
+                <Image
+                  src={logo}
+                  alt="Dev's PC Repairs Logo"
+                  className="cursor-pointer"
+                />
+              </a>
             </Link>
           </div>
           <ul className="flex mt-24 items-start justify-end text-2xl lg:text-xl font-semibold w-full uppercase mx-4 xl:mx-0 ">
